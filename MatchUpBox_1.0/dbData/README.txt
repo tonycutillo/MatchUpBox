@@ -1,0 +1,1 @@
+This folder contains the user's database comprising pictures, posts, profile description and friend lists
