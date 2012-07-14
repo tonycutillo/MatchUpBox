@@ -1,0 +1,48 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>.::MatchUpBox::.</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link rel="icon" type="image/ico" href="favicon.ico" />
+
+<script type="text/javascript" src="js/jquery-1.3.2.js"></script>
+<script type="text/javascript" src="js/ajax.js"></script> 
+</head> 
+<body onLoad="initFRA()">
+<div id="badgeOptions">
+</div>
+<div id="parameters">
+						<FORM NAME="joe"> 
+							<INPUT TYPE="hidden" NAME="burns" SIZE="35"> 
+						</form> 
+	 
+	 
+<SCRIPT LANGUAGE="javascript"> 
+	 
+var locate = window.location
+document.joe.burns.value = locate
+	 
+var text = document.joe.burns.value
+	 
+function setParameters(str){
+	index=0
+	while(1){
+		start = str.indexOf("#",index) + 1;
+		middle = str.indexOf("=",index);
+		end = str.indexOf("?",index);
+		if(start==0 || middle==-1 || end==-1)
+			break;
+		fieldName=str.substring(start, middle);
+		value=str.substring(middle+1, end);
+		document.write('<p style="visibility: hidden;" id="'+fieldName+'">' +value+'</p>');
+		index=end+1
+	}
+}
+
+setParameters(text)
+
+</script> 	
+
+</div>
+</body>
+</html>

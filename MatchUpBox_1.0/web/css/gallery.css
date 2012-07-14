@@ -1,0 +1,145 @@
+#gallery{
+width:535px;
+float:left;
+font-size:11px;
+}
+
+#galleryTitle{
+margin:0px;
+padding:0px;
+border:none;
+
+width:519px;
+height:23px;
+margin-left:1px;
+background-image:url(../img/galleryBKG.jpg);
+margin-bottom:12px;
+margin-top:4px;
+}
+
+
+#galleryTitle h1{
+font-size:0px;
+line-height:0px;
+visibility:hidden;
+}
+
+#sbAlbGall{
+margin:0px;
+padding:0px;
+border:0px;
+width:524px;
+
+margin-left:10px;
+float:left;
+margin-bottom:10px;
+padding-top:20px;
+}
+
+.imgBlockAlb{
+margin:0px;
+padding:0px;
+border:0px;
+
+height:129px;
+width: 129px;
+background-image:url(../img/albThmb.jpg);
+
+text-align:center;
+font-weight:bold;
+margin-bottom:1px;
+margin-right:1px;
+display:block;
+overflow:hidden;
+float:left;
+}
+.imgBlockAlb img.hor{
+margin:0px;
+padding:0px;
+border:none;
+width:94px;
+padding-top:3px;
+padding-left:26px;
+padding-bottom:20px;
+}
+.aname{
+margin:0px;
+padding:0px;
+border:none;
+padding-top:10px;
+padding-left:20px;
+font-weight:bold;
+font-size:16px;
+}
+
+.UploadAlbumACP{
+margin:0px;
+padding:0px;
+border:none;
+width:160px;
+padding-left:22px;
+}
+
+.UploadAlbumACP label{
+
+width:100px;
+text-align:right;
+padding-right:2px;
+float:left;
+}
+.okIn{
+    background-color: #EDF7FF;
+    border-color: #006699;
+    border-width: 1px;
+    color: #006699;
+    display: inline;
+    float: right;
+    margin-bottom: 20px;
+    margin-right: 3px;
+    padding: 0;
+    width: 100px;
+	font-size:12px;
+	line-height:20px;
+	margin-top:10px;
+}
+
+#albumName{
+margin:0px;
+padding:0px;
+border-width:1px;
+border-color:#616D84;
+color:#616D84;
+margin-left:22px;
+padding-left:5px;
+margin-right:10px;
+}
+
+
+.UploadPhotoForm{
+margin:0px;
+padding:0px;
+display:inline;
+float:left;
+width:520px;
+
+}
+.UploadPhotoForm input, #photoPath{
+border-width:1px;
+border-color:#616D84;
+color:#616D84;
+font-size:12px;
+line-height:20px;
+margin-left:10px;
+float:left;
+
+}
+
+.okFileUp{
+    background-color: #EDF7FF;
+    border-color: #006699;
+    border-width: 1px;
+    color: #006699;
+float:left;
+    width: 100px;
+	font-size:12px;
+}

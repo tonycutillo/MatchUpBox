@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>.::MatchUpBox::.</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/gallery.css" rel="stylesheet" type="text/css">
+<link rel="icon" type="image/ico" href="favicon.ico" />
+
+<script type="text/javascript" src="js/jquery-1.3.2.js"></script>
+<script type="text/javascript" src="js/ajax.js"></script> 
+
+</head>
+
+<!-- __________________________________________________________________ Body -->
+<body onload="initGallery()">
+<div id="globaltotal">
+		<div id="container2">
+		
+			<div id="header"><!-- ______________________________________ First Row -->
+				<div id="Hleft">
+					<p>Secure Online Social Network</p>
+				</div>
+			    <div id="Hright">
+			        <div id="HrightT">
+						<p>
+				            <ul id="topNav">
+								<li><a href="" class="header">Settings</a><img src="./img/se.gif">
+									<ul>
+										<li><a href="">Privacy</a></li>
+										<li><a href="badges.html">Badges</a></li>
+									</ul>
+								</li>
+								<li><a href="javascript:logout()" class="header"><strong>Logout</strong></a><img src="./img/lo.gif"></li>
+				            </ul>
+						</p>
+			        </div>
+					<div id="HrightB">
+				        <p>
+							<ul id="nav">
+								<li><a href="square.html#uid=-1?#badge=Square?" class="header">Square</a><img src="./img/sq.gif"></li>
+								<li><a href="podium.html#uid=-1?" class="header">Podium</a><img src="./img/po.gif">
+									<ul>
+						                <li><a href="profile.html#uid=-1?">Profile</a></li>
+						                <li><a href="">Wall</a></li>
+						                <li><a href="">Mail</a></li>
+						                <li><a href="gallery.html#uid=-1?">Gallery</a></li>
+						            </ul>
+								</li>
+								<li><a href="contacts.html#uid=-1?" class="header">Contacts</a><img src="./img/co.gif"></li>
+				            </ul>
+				        </p>
+					</div>
+				</div>
+			</div>
+	    
+		    <div id="central"><!-- _____________________________________ Third Row -->
+				<div id="Cleft">
+					<FORM class="friendF" action="" method="get">
+						<INPUT class="txt" type="text" id="dhtKey" value="name/id/email" onFocus="value=''">
+						<a class="fFriend" id="execute" href="javascript:find()">Find</a><img src="./img/fi.gif">
+					</FORM>
+					<div id="quickList">
+						&nbsp;
+					</div>
+					<div id="friendRequest">
+						&nbsp;
+					</div>
+				</div>
+				<div id="Ccenter">
+					<!-- <div id="tweet">
+						<div >
+							<img id="tweetImg" src="./img/avatar.jpg" />
+						</div>
+						<div id="tweetDx">
+			                <FORM class="tweetCh" action="" method="get">
+								<INPUT class="txt" type="text" id="newTweet" value="What's going on?" onFocus="value=''">
+								<a class="tweetUp" href="javascript:insertComment('this is a new thread', 1)">Share</a><img src="./img/sh.gif">
+							</FORM>
+						</div>
+			        </div>-->
+			        <div id="galleryTitle">
+						<h1>Gallery</h1>
+					</div>
+		        <div id="gallery"></div>
+					<div id="parameters">
+						<FORM NAME="joe"> 
+							<INPUT TYPE="hidden" NAME="burns" SIZE="35"> 
+						</form> 
+	 
+	 
+<SCRIPT LANGUAGE="javascript"> 
+	 
+var locate = window.location
+document.joe.burns.value = locate
+	 
+var text = document.joe.burns.value
+	 
+function setParameters(str){
+	index=0
+	while(1){
+		start = str.indexOf("#",index) + 1;
+		middle = str.indexOf("=",index);
+		end = str.indexOf("?",index);
+		if(start==0 || middle==-1 || end==-1)
+			break;
+		fieldName=str.substring(start, middle);
+		value=str.substring(middle+1, end);
+		document.write('<p style="visibility: hidden;" id="'+fieldName+'">' +value+'</p>');
+		index=end+1
+	}
+}
+
+setParameters(text)
+
+</script> 	
+
+					</div>
+				</div>
+			</div>
+
+	    
+		</div><!-- _______________________________________________ Container end -->
+	</div><!-- _______________________________________________ Globaltotal end -->
+
+</body>
+</html>

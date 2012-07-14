@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>.::MatchUpBox Login::.</title>
+		<link href="./css/style.css" rel="stylesheet" type="text/css" />
+		<link href="./css/login.css" rel="stylesheet" type="text/css" />
+		<link href="./favicon.ico" rel="icon" type="image/ico" />
+	</head>
+
+	<body>
+		<div id="globaltotal">
+			<div id="container2">
+				<form id="login" action="" method="post" accept-charset="ISO-8859-1">
+					<fieldset >
+						<legend>User Information</legend>
+						<label class="logLabel" for="firstName" >First Name:</label>	
+						<input class="logField" type="text" name="firstName" />
+						<label class="logLabel" for="lastName" >Last Name:</label>	
+						<input class="logField" type="text" name="lastName" /><br />
+						<label class="logLabel" for="gender" >Gender:</label>	
+						<input class="logField" type="text" name="gender" />
+						<label class="logLabel" for="birthDate" >Date of Birth:</label>
+						<input class="logField" type="text" name="birthDate" value="dd/mm/yyyy"><br />
+						<label class="logLabel" for="birthPlace" >Birth Place:</label>	
+						<input class="logField" type="text" name="birthPlace" />
+						<label class="logLabel" for="country" >Country:</label>	
+						<input class="logField" type="text" name="country" />						
+					</fieldset>
+					<fieldset >
+						<legend>Account Information</legend>
+						<label class="logLabel2" for="tisout" >Tis Secret Filename:</label>	
+						<input class="logField2" type="text" name="tisout" value="out" />	<br />
+						<label class="logLabel2" for="password" >Password:</label>	
+						<input class="logField2" type="password" name="password" />						
+					</fieldset>
+					<INPUT class="logbutton" type="submit" value="Generate Login File" onclick="generateLoginFile()">
+					<INPUT class="logbutton" type="reset" value="Cancel">
+				</form>
+					
+			
+			</div>
+		</div>
+	</body>
+</html>

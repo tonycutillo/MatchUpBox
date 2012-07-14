@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>.::MatchUpBox::.</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link rel="icon" type="image/ico" href="favicon.ico" />
+
+<script type="text/javascript" src="js/jquery-1.3.2.js"></script>
+<script type="text/javascript" src="js/ajax.js"></script> 
+
+</head>
+
+<!-- __________________________________________________________________ Body -->
+<body onload="init()">
+
+  <div id="globaltotal">
+    <div id="container">
+     <div id="header"><!-- ______________________________________ First Row -->
+      <div id="Hleft">
+        <p>
+          Secure Online Social Network
+        </p>
+      </div>
+      <div id="Hright">
+        <div id="HrightT">
+          <p>
+            <ul id="topNav">
+              <li><a href="" class="header">Settings</a><img src="./img/se.gif">
+                <ul>
+                  <li><a href="">Privacy</a></li>
+                            <li><a href="">Badges</a></li>
+                </ul>
+              </li>
+              <li><a href="javascript:logout()" class="header"><strong>Logout</strong></a><img src="./img/lo.gif"></li>
+            </ul>
+          </p>
+        </div>
+       <div id="HrightB">
+          <p>
+            <ul id="nav">
+              <li><a href="" class="header">Square</a><img src="./img/sq.gif"></li>
+              <li><a href="" class="header">Podium</a><img src="./img/po.gif">
+              <ul>
+                <li><a href="">Profile</a></li>
+                <li><a href="">Wall</a></li>
+                <li><a href="">Mail</a></li>
+              </ul>
+              </li>
+              <li><a href="contacts.html" class="header">Contacts</a><img src="./img/co.gif"></li>
+            </ul>
+          </p>
+        </div>
+      </div>
+     </div>
+    
+     <div id="central"><!-- _____________________________________ Third Row -->
+        <div id="Cleft">
+
+             <FORM class="friendF" action="" method="get">
+                  <INPUT class="txt" type="text" id="dhtKey" value="name/id/email">
+                <INPUT class="fFriend" type="submit" value="Find Friend" ><img src="./img/fi.gif">
+
+            </FORM>
+        
+        </div>
+        <div id="Ccenter">
+        
+        <div id="tweet">
+        <div id="tweetImg"></div>
+        <div id="tweetDx">
+          <div id="tweetContent"><p><span class="userN">Angelina Jolie</span> loses the control of herself in case of an exciting demo.. Mmmm... </p></div>
+                     <FORM class="tweetCh" action="" method="get">
+                  <INPUT class="txt" type="text" id="newTweet" value="What's going on?">
+                <INPUT class="tweetUp" type="submit" value="Share" ><img src="./img/sh.gif">
+
+            </FORM>
+        </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        <p>
+          <span class="P2P_panel">
+			Select the command:
+			<select id="command" onchange="selChange(this)">
+			<option value="contacts" selected="selected">Show contacts</option>
+			<option value="stored">Show stored data</option>
+			<option value="store" >Store key-value</option>
+			<option value="find">Find key-value</option>
+			</select> <br/>
+			
+			<input type="textbox" id="key" name="key" value="key"> <input type="textbox" id="value" name="key" value="value">
+			
+			<button id="execute" onclick="getData()">Execute</button>
+          </span>
+          </p>
+          
+          <p>
+          <span class="response">
+          </span>
+          </p>
+        
+        
+        
+        </div>
+     </div>
+    
+    
+    
+    </div><!-- _______________________________________________ Container end -->
+
+
+  </div><!-- _______________________________________________ Globaltotal end -->
+
+</body>
+</html>
