@@ -18,7 +18,7 @@ To run MatchUpBox, please download and install
 
 1 - RUN MATCHUPBOX
 
-- go to the website www.matchupbox.com and take the step 1: get an invitation
+- go to the website www.matchupbox.com, click on "Windows only for the moment" and take the step 1: get an invitation
   - fill the form and click on "get my invitation"
   - save your invitation file in the MatchUpBox folder
 - in case your home nat does not support the UPnP protocol please:
